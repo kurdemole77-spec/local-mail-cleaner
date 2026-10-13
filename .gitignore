@@ -1,0 +1,23 @@
+# Virtual environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# Local data must never be committed
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.log
+logs/
+
+# Secrets and real mail must never be committed
+client_secret*.json
+*.pem
+*.key
+*.eml
+*.mbox
+.env

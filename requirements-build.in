@@ -1,0 +1,4 @@
+# Build tool for dependencies published only as source (dkimpy).
+# Installed first with hash checking, then requirements.txt is installed with
+# --no-build-isolation so no unverified build tool is downloaded.
+setuptools==84.0.0

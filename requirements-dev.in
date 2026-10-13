@@ -1,0 +1,6 @@
+# Development / test dependencies (runtime + test tools). Regenerate with:
+#   uv pip compile requirements-dev.in --universal --generate-hashes --python-version 3.10 \
+#     --exclude-newer <date two weeks ago> -o requirements-dev.txt
+-r requirements.in
+pytest
+cryptography  # only to generate throw-away DKIM keys in tests
